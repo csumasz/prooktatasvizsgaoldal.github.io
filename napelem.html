@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html lang="HU">
+
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Varga Csaba vizsgaoldal</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="vizsgaoldal.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <script type="text/javascript" src="vizsga.js"></script>
+</head>
+
+<body>
+  <header class="container">
+    <img id="MiddlesiteHeaderImage" class="headerimage"
+      src="https://cdn.pixabay.com/photo/2014/10/16/21/17/solar-cells-491703_960_720.jpg" alt="HeaderFullSite">
+    <img id="FullsiteHeaderImage" class="headerimage"
+      src="https://cdn.pixabay.com/photo/2014/10/16/21/17/solar-cells-491703_960_720.jpg" alt="HeaderFullSite">
+    <img id="MobileHeaderImage" class="headerimage"
+      src="https://cdn.pixabay.com/photo/2017/09/12/13/21/photovoltaic-system-2742302__340.jpg" alt="HeaderMobile">
+    <div class="reglogin container">
+      <div class="socholder">
+        <div class="regloginButton">
+          <a href="#" id="regButton" onclick=leftAside()>Regisztráció</a>
+          <a href="#" id="loginButton" onclick=rightAside()>Bejelentkezés</a>
+        </div>
+      </div>
+    </div>
+    <div class="headerAsideContainer">
+      <div id="headerLeftAside" class="headerAside">
+        <label for="firstName">Vezetéknév</label><input type="text" class="firstName" name="firstName">
+        <label for="lastName">Keresztnév</label><input type="text" class="lastName" name="lastName">
+        <label for="email">Email cím</label><input type="email" class="email" name="email">
+        <label for="regPassword">Jelszó</label><input type="password" class="password" name="regPassword">
+        <button type="submit" class="registrationButton" name="regButton">Regisztráció</button>
+      </div>
+      <div id="headerRightAside" class="headerAside">
+        <label for="username">Felhasználónév</label><input type="text" class="username" name="username">
+        <label for="loginPassword">Jelszó</label><input type="text" class="password" name="loginPassword">
+        <button type="submit" name="loginButton">Belépés</button>
+      </div>
+    </div>
+    <div>
+      <div class="contactNav">
+        <div class="contactLogo">
+          <img src="https://cdn.pixabay.com/photo/2013/07/13/11/46/panel-158630__340.png" alt="Logo">
+        </div>
+        <div class="phoneContact">
+          <i class="bi bi-telephone-inbound"></i>
+          <p class="opening ">Hét-Pén: 08:00 - 19:00</p>
+          <p>+36-99/303-45-00</p>
+        </div>
+        <div class="smsContant">
+          <i class="bi bi-chat-left-text"></i>
+          <p class="opening">Hét-Pén: 08:00 - 19:00</p>
+          <p>+36-99/303-45-00</p>
+        </div>
+        <a class="writingToUs_button"></a>
+      </div>
+      <div class="headWelcome">
+        <div class="">
+          <i class="bi bi-sun"></i>
+          <h2 class="headWelcomeHeader">Üdvözlünk a weboldalunkon!</h2>
+          <i class="bi bi-sun"></i>
+        </div>
+        <div class="">
+          <h2>Ismerkedj meg a Napenergia hasznosításában rejlő lehetőségekkel!</h2>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="container"><i class="bi bi-list" onclick=menudisplay()></i>
+    <ul class="menu" id="menulist">
+      <li class="navitems"><a href="index.html">Főoldal</a></li>
+      <li class="navitems"><a href="napelem.html">Napelemes rendszerek</a></li>
+      <li class="navitems"><a href="napkollektor.html">Melegvizes megoldások</a></li>
+      <li class="navitems"><a href="galeria.html">Galéria</a></li>
+    </ul>
+  </nav>
+  <main class="container">
+    <!--<h2>Napelemes rendszerek</h2>-->
+    <div class="content">
+      <div class="imageContainer">
+        <div class="mainContent">
+          <h3>A napelemes rendszer működése</h3>
+          <p>A napelem panelek szilícium elemekből épülnek fel. Ez az anyag fényre érzékeny félvezető így felhasználható
+            napfény
+            indukálta elektromos áram előállításához. Leginkább két féle napelem panel gyártása terjedt el (mono és
+            poli)
+            amelyekről
+            bővebben itt olvashat.
+            Alapvetően kétféle rendszer fajtát különböztetünk meg aszerint, hogy kapcsolódik-e a villamos hálózathoz
+            vagy
+            sem.
+          </p>
+        </div>
+        <img class="photo" src="https://cdn.pixabay.com/photo/2019/10/03/11/07/photovoltaic-4522955__340.jpg" alt="">
+      </div>
+      <div class="imageContainer">
+        <div class="mainContent">
+          <h3>Hálózatra kapcsolt napelem rendszer</h3>
+          <p>Ez a legismertebb és leggyakoribb rendszer fajta. Ebben az esetben a napelemek által létrehozott energia
+            egy
+            inverter
+            segítségével alakul át villamos energiává, amelyet már a háztartásban tudunk használni. Amikor a rendszer
+            kevesebb
+            energiát termel, mint amennyit felhasználnak, akkor a villamos hálózat szolgáltatja a szükséges áramot
+            (ahogyan a
+            rendszer aktiválása előtt). Amikor a kiserőmű többet termel, mint amit felhasználtak belőle, akkor a
+            többletet
+            visszatáplálja a villamos hálózatba. Ez egy korszerű megoldás, amely az egész évi áramfogyasztást fedezheti,
+            hiszen az
+            időjárás függő áramtermelést a villamos hálózat kiegyensúlyozza.
+          </p>
+        </div>
+        <img class="photo" src="https://cdn.pixabay.com/photo/2018/08/03/07/41/solar-system-3581244__340.jpg" alt="">
+      </div>
+      <div class="imageContainer">
+        <div class="mainContent">
+          <h3>Szigetüzemű rendszer</h3>
+          <p>Ez egy teljesen független, önálló áramellátó rendszer. Az áram tárolásáról akkumulátor gondoskodik. A
+            rendszer a
+            napelemek által megtermelt áramot inverteren keresztül átalakítja villamos energiává, majd egy úgynevezett
+            töltésszabályozó segítségével szabályozza az akkumulátorok töltődését, hogy még véletlenül se történjen
+            túltöltés
+            vagy
+            egyéb probléma. Ajánlott módszer, ha a térségben nincsen villamos hálózat vagy annak kiépítése nagyon drága
+            lenne
+            (tanya, nyaraló). Hátránya a hálózatra kapcsolt rendszerrel szemben, hogy jóval drágább, a költségek akár a
+            többszörösére is ugorhatnak, valamint karbantartást is igényel, hiszen az akkumulátornak nem véges az
+            élettartama
+            (5-6
+            évente cserélni kell)
+          </p>
+        </div>
+        <img class="photo" src="https://cdn.pixabay.com/photo/2021/07/20/05/28/farm-6479771__340.jpg" alt="">
+      </div>
+      <div class="imageContainer">
+        <div class="mainContent">
+          <h3>Egy-, vagy háromfázisú rendszer</h3>
+          <p>Egyfázisú fogyasztói csatlakozás esetén maximum 5 kW-os termelő berendezés csatlakoztatható a hálózatra,
+            amennyiben a
+            fázis teljesítménye ezt engedi (25A).
+
+            Háromfázisú fogyasztói csatlakozás esetén a termelő berendezés csatlakoztatható egy-, kettő-, vagy mindhárom
+            fázisra a
+            rendelkezésre álló teljesítményig, de maximum 50 kW-ig . Ebben az esetben egyfázisú termelő berendezés
+            hálózatvizsgálat
+            nélkül 2,5 kW-ig csatlakoztatható.
+
+            2,5 és 5 kW közötti névleges teljesítőképességű termelőegységek egyfázisú csatlakoztatását az elosztói
+            engedélyes
+            a
+            hálózati paraméterek figyelembevételével, az igénybejelentésre adott műszaki-gazdasági tájékoztatóban írt
+            feltételekkel
+            engedélyezheti.
+          </p>
+        </div>
+        <img class="photo" src="https://cdn.pixabay.com/photo/2020/09/30/17/53/farm-5616600__340.jpg" alt="">
+      </div>
+      <div class="infoSendContainer">
+        <div class="infoSendContent">
+          <img src="https://cdn.pixabay.com/photo/2021/07/20/21/53/house-6481809__340.png">
+          <div class="infoSendMain">
+            <h2 class="infoSendHeader">Kérjen ajánlatot!</h2>
+            <div class="infoSendForm">
+              <label for="userName">Név</label><input type="text" id="userName" class="infoSendData" name="userName">
+              <label for="userEmail">Email</label><input type="text" id="userEmail" class="infoSendData"
+                name="userEmail">
+              <input type="submit" value="Több info-t kérek!">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="imageContainer">
+        <div class="mainContent">
+          <h3>A napelem rendszer alkotórészei</h3>
+          <p>Bemutatjuk a hálózatra kapcsolt rendszer működéséhez elengedhetetlen főbb összetevőket, azaz a napelem
+            rendszer felépítését: a panelek, az inverter, a tartósín szerkezet valamint egy külső, oda-vissza mérő óra.
+          </p>
+        </div>
+        <img class="photo" src="https://cdn.pixabay.com/photo/2020/10/03/09/05/solar-energy-5622969__340.jpg" alt="">
+      </div>
+      <div class="imageContainer">
+        <div class="mainContent">
+          <h3>Napelem panelek</h3>
+          <p>Óriási választékban találhatóak meg napelemek a magyar piacon különböző teljesítményben és méretben.
+            Támpontként minden napelem körülbelül 1,6 méter hosszú és 1 méter széles.
+            A 3 kW-os napelem rendszerhez körülbelül 24 m2-es szabad tető felület szükséges, az 5 kW-os napelem
+            rendszernél ez körülbelül 40 m2. Típusait tekintve kristályos technológia esetén két fajta napelemet
+            különböztetünk meg: a monokristályosat
+            és a polikristályosat. Ezek nagy tisztaságú szilícium cellákból épülnek fel, sorba kötve és vízmentesen egy
+            üveglap és egy műanyag hátlap közé laminálva kerülnek gyártásra.
+          </p>
+        </div>
+        <img class="photo" src="https://cdn.pixabay.com/photo/2017/08/21/17/25/solar-photovoltaic-2666105__340.jpg"
+          alt="">
+      </div>
+      <div class="imageContainer">
+        <div class="mainContent">
+          <h3>Inverter</h3>
+          <p>A napelemek alacsony feszültségű egyenáramot termelnek. Az inverter az ami átalakítja ezt váltóárammá, amit
+            utána
+            háztartási készülékek üzemeltetésére lehet felhasználni.
+            Az inverter megméri, hogy mennyire hatékonyan alakítja át az egyenáramot váltóárammá. Ez általában 95% –
+            97,5%
+            között
+            van a legtöbb modellnél. Az inverterek méretezése szerint függ, hogy mennyi enerigát tudnak szállítani.
+            Természetesen
+            minél hatékonyabb az inverter annál jobb, mivel kevesebb villamos energia fog kárba veszni az átalakítás
+            során.
+            A napelemek felől érkező elektromos lengésektől AC-DC védelem biztosítja az invertert.
+          </p>
+        </div>
+        <img class="photo"
+          src="https://media.istockphoto.com/photos/inverter-behind-the-solar-panels-renewable-energy-picture-id1041727358?b=1&k=20&m=1041727358&s=170667a&w=0&h=gZygYQ7xX9tENXcJUh8t6jCvBRsfPwAgFDI7BunPTXg="
+          alt="">
+      </div>
+      <div class="imageContainer">
+        <div class="mainContent">
+          <h3>Tartószerkezet</h3>
+          <p>A tartósín a háztető gerendáira rögzített rozsdamentes, saválló szerkezet, amelyre a napelem paneleket
+            installálják.
+            Kulcsfontosságú a napelem rendszer megfelelő működésében, hiszen jelentős környezeti hatásnak van kitéve
+            (szél,
+            eső
+            jég). Nem érdemes fukarnak lenni ezen az alkatrészen: győződjön meg róla, hogy rozsdamentes acél anyagból
+            készült
+            és,
+            hogy erre is vonatkozik-e garancia.
+          </p>
+        </div>
+        <img class="photo" src="https://cdn.pixabay.com/photo/2017/09/30/23/36/photovoltaic-2803889__340.jpg" alt="">
+      </div>
+      <div class="imageContainer">
+        <div class="mainContent">
+          <h3>Kábelek és csatlakozók</h3>
+          <p>A csatlakozók és kábelek jó minősége elengedhetetlen, mivel jelentősen befolyásolják a rendszer
+            teljesítményét és
+            biztonságát. A kábelezésnek PV1-F igazolással kell rendelkeznie és a napelem csatlakozóknak meg kell
+            felelniük
+            az
+            EN
+            50521 szabványoknak!
+          </p>
+        </div>
+        <img class="photo"
+          src="https://media.istockphoto.com/photos/row-of-power-equipment-picture-id450437183?k=20&m=450437183&s=612x612&w=0&h=pbd5x3Ce9I4M3cExam4rHGJvCu4BudNVj_gLFViPkgE="
+          alt="">
+      </div>
+      <div class="imageContainer">
+        <div class="mainContent">
+          <h3>Oda vissza mérő óra</h3>
+          <p>A hálózatra kapcsolt napelem rendszert működéséhez mindenképpen szükség lesz egy oda-vissza mérő órára,
+            amely
+            méri a
+            betáplált és a vételezett mennyiséget, tehát azt számolja, hogy a rendszer mennyit termelt és ebből mennyi
+            jutott
+            vissza
+            a hálózatba vagy került helyben elfogyasztásra. A két adat (vételezett és felhasznált) különbségét szükséges
+            fizetni
+            a
+            szolgáltató felé. Ennek típusát az áram szolgáltató határozza meg.
+          </p>
+        </div>
+        <img class="photo"
+          src="https://media.istockphoto.com/photos/payment-of-utility-services-concept-part-of-an-electricity-meter-picture-id1307617970?k=20&m=1307617970&s=612x612&w=0&h=jTrla2fPHd4ToXpiNpatMHDiPa93ok5DfA2zF06DIlc="
+          alt="">
+      </div>
+    </div>
+  </main>
+  <footer class="container">
+    <div class="contactFooter">
+      <div class="contactLogo">
+        <img src="https://cdn.pixabay.com/photo/2013/07/13/11/46/panel-158630__340.png" alt="Logo">
+      </div>
+      <div class="phoneContact">
+        <i class="bi bi-telephone-inbound"></i>
+        <p class="opening ">Hét-Pén: 08:00 - 19:00</p>
+        <p>+36-99/303-45-00</p>
+      </div>
+      <div class="smsContact">
+        <i class="bi bi-chat-left-text"></i>
+        <p class="opening">Hét-Pén: 08:00 - 19:00</p>
+        <p>+36-99/303-45-00</p>
+      </div>
+      <a class="writingToUs_button"></a>
+    </div>
+
+    <ul class="footerLinks" id="menulist">
+      <li class="navitems"><a href="index.html">Főoldal</a></li>
+      <li class="navitems"><a href="napelem.html">Napelemes rendszerek</a></li>
+      <li class="navitems"><a href="napkollektor.html">Melegvizes megoldások</a></li>
+      <li class="navitems"><a href="galeria.html">Galéria</a></li>
+    </ul>
+    <div class="sourchePageContainer">
+      <div class="sourchePage">
+        <h4>Elérhetőségeink:</h4>
+        <ul>
+          <li class="footeritems">Címünk: 9000 Győr Győri út 1.
+          </li>
+          <li class="footeritems">Telefon: +36-30/303-03-03
+          </li>
+          <li class="footeritems">E-mail: napenergia.gyor@gyor.hu
+          </li>
+        </ul>
+      </div>
+      <div class="sourchePage rightSourchePage">
+        <h4>Felhasznált tartalom:</h4>
+        <ul>
+          <li class="footeritems"><a
+              href="https://energiakaland.hu/energiaotthon/energiaforras/nap">energiakaland.hu</a>
+          </li>
+          <li class="footeritems"><a
+              href="https://gershojenergia.com/a-napelem-rendszer-mukodese/?gclid=CjwKCAjwxo6IBhBKEiwAXSYBs4nuR0QVZ5vTBj2gFKy5GoFXWtBdYxRTv2mGP_-o3sgEJ1d6ThrPxhoCAikQAvD_BwE">gershojenergia.hu</a>
+          </li>
+          <li class="footeritems"><a href="https://hu.wikipedia.org/wiki/Napelem">wikipedia/napelem</a></li>
+          <li class="footeritems"><a href=""></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footerNav">
+      <div class="scrollTop" data-target="html"><a href="#"><i class="bi bi-arrow-up"></i></a></div>
+      <ul class="clearfix">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Sitemap</a></li>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script></script>
+</body>
+
+</html>
