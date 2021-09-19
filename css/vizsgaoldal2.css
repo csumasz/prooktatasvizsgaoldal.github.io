@@ -1,0 +1,938 @@
+body, html{
+  margin: 0;
+  padding: 0;
+  background-color: #F5F5F5;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*{
+   box-sizing: border-box;
+}
+
+.mainMaxWidth{
+  width: 92%;
+  margin: 0 auto;
+}
+
+.topNavigation{
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.greyBorder{
+  height: 1px;
+  border-bottom: 1px solid #EBEBEB;
+}
+
+.topLogo{
+  height: 100%;
+}
+
+.topLogo img{
+  height: 100%;
+  padding: 10px 0;
+}
+
+.topNavIcon{
+  font-size: 30px;
+  
+}
+
+.topNavbar{
+  display: none;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  z-index: 2;
+}
+
+.menu{
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  position: relative;
+  list-style: none;
+  padding-left: 0;
+}
+
+.menu li{
+  margin: 10px 0;
+
+}
+
+.menu a{
+  text-decoration: none;
+  color: #253745;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav>a{
+  margin: 0 auto;
+}
+
+.topNavbar .navitems a:hover{
+  text-decoration: none;
+  color: #32C36C;
+}
+
+.navitems{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.bi-arrow-down-square{
+  color: #fff;
+  border: 1px solid #32C36C;
+  background-color: #32C36C;
+}
+
+.Navbutton, .onSliderButton, .greenButton{
+  margin: 20px auto;
+  padding: 20px 30px;
+  background-color: #32C36C;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid #32C36C;
+  border-radius: 5px;
+}
+
+.Navbutton:hover, .onSliderButton:hover{
+  background-color: #253644;
+  color: #fff;
+  border-color: #253644;
+}
+
+{.greenButton
+  border: 2px solid #253644;
+}
+
+.greenButton:hover{
+  background-color: #253644;
+  border: 2px solid #fff;
+}
+
+.bi-arrow-right{
+  padding-left: 10px;
+}
+
+/*slider css*/
+section.sliderContainer{
+  height: 500px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.mySlides img{
+ width: 100%;
+ height: 500px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 466px;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  background-color: #32C36C;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  z-index: 11;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #253644;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.onSliderInfo{
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  flex-direction: column;
+  top: -500px;
+  text-align: center;
+  padding: 25px 0;
+  background-color: rgba(100, 100, 100, 0.3);
+}
+
+h1{
+  font-size: 34px;
+  color: #fff;
+}
+
+.onSliderInfo p{
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.onSliderInfo img{
+  width: 12%;
+  margin: 10px 15px;
+}
+
+.pageContent{
+  background-color: #F5F5F5;
+}
+
+main{
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+
+.mainHeaderImage{
+  width: 98%;
+  height: 300px;
+  margin: 75px auto;
+}
+
+.mainHeaderImage img{
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.mainHeaderContent{
+  width: 60%;
+  margin: 0 45% 0 5%;
+  position: relative;
+  top: -250px;
+  background-color: #32C36C;
+  border-radius: 10px;
+  padding: 20px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.clientNumber{
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+
+.mainHeaderContent p{
+  margin-top: 0;
+  color: #fff;
+}
+
+.mainTopInfo {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.mainTopInfo p, .whiteMainTopInfo p{
+  color: #32C36C;
+  font-size: 18px;
+  background-color: #E0F6E9;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0;
+}
+
+.customHeading{
+  font-size: 26px;
+  color: #253644;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+main p.boldContent{
+  color: #2B3E4B;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+main p{
+  color: #9B9B9B;
+}
+
+.mainButton{
+  color: #fff;
+  background-color: #253745;
+  border: none;
+  font-size: 14;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 20px 30px;
+  margin: 15px 0; 
+}
+
+.mainButton:hover{
+  background-color: #32C36C;
+}
+
+.systemList{
+  list-style: none;
+  color: #A49B9B;
+  padding: 0;
+}
+
+.systemList li{
+  width: 275px;
+}
+
+  .systemList li:hover{
+  color: #253644;
+  cursor: pointer;
+}
+
+.systemListItems{
+  margin: 10px 0;
+}
+
+.systemListItems span{
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: bold;
+}
+
+
+.bi-shield-fill-check{
+  background-color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+  color: #32C36C;
+}
+
+.blueBackgroundContent{
+  min-height: 1000px;
+  background-color: #253745;
+}
+
+.blueBackgroundContent{
+  padding: 150px 0 125px 0;
+  margin-top: 125px;
+}
+
+.bluemainTopInfo{
+  color: #32C36C;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.blueMainContent p, .BlueMainGreyContent{
+  color: #ECF6F9;
+}
+
+.blueMainBoldContent{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.buttonContainer:last-child button{
+  background-color: #253644;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+
+.blueCaruselContainer{
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.blueCaruselContainer{
+  margin-top: 50px;
+}
+
+.blueCaruselContainer img{
+  width: 100px;
+}
+
+.blueContentCarusel button{
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 20px;
+  margin-top: 10px;
+  background-color: #253644;
+  border-color: #253644;
+  border-style: none;
+  color: #fff;
+}
+
+.blueContentCarusel button:hover{
+  background-color: #32C36C;
+  border-color: #32C36C;
+  
+}
+
+.blueCaruselTitle{
+  color: #2B3E4B;
+}
+
+.blueCaruselDescription{
+  color: #9B9B9B;
+}
+
+.blueContentCarusel{
+  margin-bottom: 100px;
+}
+
+.callUsContent{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.blueBackgroundContent  .customHeading{
+  color:#fff;
+}
+
+.bi-telephone{
+  margin-left: 10px;
+}
+
+.callUsContent button{
+  margin: 50px 0 0 0 ;
+  padding: 20px 30px;
+  background-color: #253644;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+
+.callUsContent button:hover{
+  background-color: #32C36C;
+  border: 2px solid #253644;
+}
+
+/*white content css*/
+
+
+.contentImage{
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  top: -50px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px #253644;
+}
+
+.whiteMainTopInfo{
+  color: #32C36C;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.whiteMainBoldContent{
+  color: #253644;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.blueBackgroundContent .contentImage{
+  margin-top: -200px;
+}
+
+/*form css*/
+
+.blueFormContainer{
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.blueFormContainer input, textarea {
+  display: block;
+  width: 90%;
+  margin: 20px auto;
+  padding: 5px 10px;
+  border: 1px solid #253644;
+  border-radius: 5px;
+  color: #253644;
+  line-height: 18px;
+}
+
+textarea{
+  display: block;
+}
+
+.blueFormContainer button{
+  background-color: #253644;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 10px 5%;
+  border: 1px solid #253644;
+}
+
+.blueFormContainer button:hover{
+  background-color: #32C36C;
+  border: 1px solid #fff;
+}
+
+.downWhiteContent{
+  text-align: center;
+}
+
+.whiteContent:last-child{
+  margin-bottom: 0;
+}
+
+
+footer, .footerLinks a, .footeritems a, .footerNav a{
+  color: #ECF6F9;
+}
+
+footer.blueBackgroundContent{
+  margin-top: 50px;
+  padding-top: 50px;
+  min-height: 800px;
+}
+
+.sourchePage ul{
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.blueFooterContent{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.blueFooterContent div{
+  margin-bottom: 25px;
+}
+
+.footerLinks{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-bottom: 50px;
+
+}
+
+footer .navitems{
+  margin: 10px 0;
+  padding: 10px 15px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+footer .navitems:hover{
+  color: #ECF6F9;
+  background-color: #32C36C;
+}
+
+footer .navitems a{
+  text-decoration: none;
+}
+
+.sourchePageContainer{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.sourchePage{
+  width: 80%;
+  margin: 10px auto;
+}
+
+h4{
+  font-size: 18px;
+  margin-left: 5%;
+}
+
+.footeritems{
+  margin-bottom: 10px;
+}
+
+.scrollTop{
+  text-align: center;
+  border-top: 1px solid #ECF6F9;
+}
+
+.scrollTop a:hover{
+  background-color: #32C36C;
+  color: #fff;
+}
+
+.scrollTop a{
+  border: 1px solid #ECF6F9;
+  padding: 15px;
+  background-color: #ECF6F9;
+  color: #253644;
+  font-size: 30px;
+  position: relative;
+  top: -18px;
+}
+
+.clearfix{
+  margin-top: 50px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+
+.clearfix li{
+  width: 60%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.clearfix a{
+  text-decoration: none;
+  
+}
+
+/*subpage css*/
+
+.galerie h3{
+  text-align: center;
+}
+
+.galerieForm{
+  background-color: #253644;
+  border-radius: 10px;
+  padding: 10px 20px;
+
+}
+
+.galerie img{
+  width: 100%;
+  height: 200px;
+  margin-bottom: 50px;
+}
+
+/*responsive css*/
+
+@media (min-width: 400px){
+  .contentImage{
+    width: 70%;
+  }
+
+  .onSliderInfo img{
+    width: 9%;
+  }
+
+  .blueFormContainer{
+    width: 80%;
+    margin: 50px auto;
+  }
+
+  .blueFormContainer input, textarea{
+  width: 70%;
+  }
+
+  .blueFormContainer button{
+    margin-left: 15%;
+  }
+
+  footer .navitems{
+    width: 40%;
+    height: 50px;
+    
+  }
+  footer .navitems a{
+    width: 100%;
+    text-align: center;
+  }
+
+  .sourchePage {
+    width: 80%;
+    margin: 10px auto;
+  }
+  h4{
+    font-size: 18px;
+    margin-left: 10%;
+  }
+}
+
+@media (min-width:576px) {
+  
+
+  .menu li{
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  .mainHeaderImage{
+    width: 80%;
+    margin: 50px auto;
+  }
+
+  .mainHeaderImage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .onSliderInfo img{
+    width: 8%;
+  }
+  
+  .contentImage{
+    width: 60%;
+  }
+
+  .blueFooterContent {
+    width: 80%;
+    margin: 20px auto 50px auto;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .galerie img {
+    height: 300px;
+  }
+}
+
+  @media (min-width:768px) {
+    .mainMaxWidth {
+      width: 80%;
+    }
+
+    .mainHeaderImage {
+      width: 70%;
+    }
+
+    .contentImage{
+     width: 50%;
+     max-height: 375px;
+    }
+
+    .sourchePageContainer{
+      flex-wrap: nowrap;
+      margin-left: 10%;
+    }
+
+    .clearfix{
+      width: 80%;
+      margin: 50px auto 0 auto;
+      flex-wrap: nowrap;
+      justify-content: space-evenly;
+    }
+
+    .clearfix li{
+      width: 25%;
+    }
+
+    .galerie img {
+      height: 400px;
+    }
+    
+  }
+
+@media (min-width:992px) {
+  section.sliderContainer, .slideshow-container, .onSliderInfo, .mySlides img {
+    height: 700px;
+  }
+
+  .onSliderInfo{
+    top: -700px;
+  }
+
+  .prev, .next {
+    top: 300px;
+    margin: 0 10%;
+  }
+
+  .onSliderInfo>div{
+    margin-bottom: 50px;
+  }
+
+  .mainHeaderImage {
+    height: 350px;
+}
+
+  .galerie img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .solarCellGalerie, .collektorGalerie{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .solarCellGalerie>div, .collektorGalerie>div{
+    width: 45%;
+  }
+
+  h4 {
+    margin-left: 15%;
+  }
+
+}
+
+@media (min-width:1200px) {
+  .mainMaxWidth {
+      width: 70%;
+    }
+
+  .onSliderInfo{
+    padding-top: 100px;
+  }
+
+  .topNavbar{
+    flex-direction: column;
+    padding-top: 50px;
+  }
+
+  .onSliderInfo img {
+    width: 6%;
+  }
+
+  .galerie img{
+    height: 300px;
+  }
+
+  section.sliderContainer, .slideshow-container, .onSliderInfo, .mySlides img {
+    height: 850px;
+  }
+
+  .onSliderInfo{
+    top: -850px;
+  }
+
+  .prev, .next {
+    top: 375px;
+    margin: 0 15%;
+  }
+
+  .mainHeaderImage {
+    height: 550px;
+  }
+
+  .mainHeaderContent {
+    top: -320px;
+  }
+
+  .blueBackgroundContent {
+    padding: 5px 0 125px 0;
+    margin-top: 25px;
+  }
+
+ .contentImage {
+    margin: -180px 0 0 50%;
+    width: 35%;
+    max-height: 400px;
+  }
+
+  .callUsContent{
+    width: 50%;
+    margin-left: 15%;
+  }
+
+  .blueFormContainer{
+    width: 70%;
+  }
+
+  .blueFormContainer input, textarea {
+    width: 50%;
+  }
+
+  .blueFormContainer button {
+    margin-left: 25%;
+  }
+
+
+  .whiteMainContent .whiteMainGreyContent {
+    width: 50%;
+  }
+
+  .whiteMainGreyContent{
+    width: 60%;
+  }
+
+  .whiteContent>div{
+    margin-bottom: 200px;
+    /*padding-top: 25px;*/
+  }
+
+  .downWhiteContent {
+    margin-bottom: 0 !important;
+  }
+
+  .downWhiteContent .contentImage{
+    margin: 375px 0 0 52%;
+  }
+
+  .whiteMain{
+    margin-top: -675px;
+    min-height: 375px;
+  }
+
+  .footerLinks{
+    flex-wrap: nowrap;
+  }
+  
+  .footerLinks li{
+    width: 20%;
+  }
+
+}
