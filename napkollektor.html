@@ -1,221 +1,315 @@
 <!DOCTYPE html>
-
-<html lang="HU">
+<html lang="hu">
 
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prooktatas Vizsgoldal</title>
 
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Varga Csaba vizsgaoldal</title>
+  <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="vizsgaoldal.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="index, follow">
-  <script type="text/javascript" src="vizsga.js"></script>
+  <link rel="stylesheet" href="css/vizsgaoldal2.css">
+
+
 </head>
 
 <body>
-  <header class="w1120">
-    <img id="MiddlesiteHeaderImage" class="headerimage"
-      src="https://cdn.pixabay.com/photo/2014/10/16/21/17/solar-cells-491703_960_720.jpg" alt="HeaderFullSite">
-    <img id="FullsiteHeaderImage" class="headerimage"
-      src="https://cdn.pixabay.com/photo/2014/10/16/21/17/solar-cells-491703_960_720.jpg" alt="HeaderFullSite">
-    <img id="MobileHeaderImage" class="headerimage"
-      src="https://cdn.pixabay.com/photo/2017/09/12/13/21/photovoltaic-system-2742302__340.jpg" alt="HeaderMobile">
-    <div class="reglogin w1120">
-      <div class="socholder">
-        <div class="regloginButton">
-          <a href="#" id="regButton" onclick=leftAside()>Regisztráció</a>
-          <a href="#" id="loginButton" onclick=rightAside()>Bejelentkezés</a>
-        </div>
-      </div>
+
+  <section class="topNavigation mainMaxWidth">
+    <div class="topLogo"><img src="https://demo.farost.net/energia/wp-content/uploads/2021/01/logo-dark.png" alt="logo">
     </div>
-    <div class="headerAsideContainer">
-      <div id="headerLeftAside" class="headerAside">
-        <label for="firstName">Vezetéknév</label><input type="text" class="firstName" name="firstName">
-        <label for="lastName">Keresztnév</label><input type="text" class="lastName" name="lastName">
-        <label for="email">Email cím</label><input type="email" class="email" name="email">
-        <label for="regPassword">Jelszó</label><input type="password" class="password" name="regPassword">
-        <button type="submit" class="registrationButton" name="regButton">Regisztráció</button>
+    <div class="topNavIcon"><i class="bi bi-list" onclick="menudisplay()"></i></div>
+  </section>
+  <div class="greyBorder"></div>
+
+  <nav id="topNavigation" class="topNavbar">
+    <ul class="menu mainMaxWidth">
+      <a href="index.html">
+        <li class="navitems">Főoldal<i class="bi bi-arrow-down-square"></i></li>
+      </a>
+      <a href="napelem.html">
+        <li class="navitems">Napelemes rendszerek<i class="bi bi-arrow-down-square"></i></li>
+      </a>
+      <a href="napkollektor.html">
+        <li class="navitems">Melegvizes megoldások<i class="bi bi-arrow-down-square"></i></li>
+      </a>
+      <a href="galeria.html">
+        <li class="navitems">Galéria <i class="bi bi-arrow-down-square"></i></li>
+      </a>
+    </ul>
+    <a href="#writeUs">
+      <button class="Navbutton" type="button" onclick="">Kérje árajánlatunkat!<i class="bi bi-arrow-right"></i>
+      </button>
+    </a>
+  </nav>
+
+  <section class="sliderContainer">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img id="MiddlesiteHeaderImage" class="headerimage"
+          src="https://cdn.pixabay.com/photo/2017/08/21/20/29/solar-2666770__340.jpg" alt="HeaderFullSite">
       </div>
-      <div id="headerRightAside" class="headerAside">
-        <label for="username">Felhasználónév</label><input type="text" class="username" name="username">
-        <label for="loginPassword">Jelszó</label><input type="text" class="password" name="loginPassword">
-        <button type="submit" name="loginButton">Belépés</button>
+      <div class="mySlides fade">
+        <img id="FullsiteHeaderImage" class="headerimage"
+          src="https://cdn.pixabay.com/photo/2012/12/21/10/07/solar-power-71705__340.jpg" alt="HeaderFullSite">
+      </div>
+      <div class="mySlides fade">
+        <img id="MobileHeaderImage" class="headerimage"
+          src="https://cdn.pixabay.com/photo/2021/07/20/05/28/farm-6479771__340.jpg" alt="HeaderMobile">
+      </div>
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div class="onSliderInfo">
+      <div class="animatedParent" data-sequence="1000'">
+        <h1 class="animated bounceIn" data-id="1">Napenergia<br>A jővő energiája!</h1>
+        <p class="animated fadeInLeft" data-id="1">Üdvözlünk a weboldalunkon!<br>Ismerkedj meg a Napenergia
+          hasznosításában rejlő
+          lehetőségekkel!</p>
+      </div>
+
+      <div class="animatedParent">
+        <img class="animated fadeIn slowest" data-id="1"
+          src="https://demo.farost.net/energia/wp-content/uploads/2021/02/slider-icon3.png" alt="">
+        <img class="animated fadeIn slowest" data-id="2"
+          src="https://demo.farost.net/energia/wp-content/uploads/2021/02/slider-icon1.png" alt="">
+        <img class="animated fadeIn slowest" data-id="3"
+          src="https://demo.farost.net/energia/wp-content/uploads/2021/02/slider-icon2.png" alt="">
+      </div>
+      <a href="#menulist"><button type="button" class="onSliderButton">Elérhetőségeink!<i
+            class="bi bi-arrow-right"></i></button></a>
+
+    </div>
+  </section>
+
+  <section class="pageContent">
+    <div class="mainHeaderImage">
+      <img
+        src="https://media.istockphoto.com/photos/solar-glass-tube-hot-water-panel-array-on-a-roof-picture-id493156308?k=6&m=493156308&s=612x612&w=0&h=nU1d-cfYgCM-Q4yOe1NNBCPbdQHQqR6rVNxqOP3fWIE="
+        alt="">
+      <div class="animatedParent">
+        <div class="mainHeaderContent animated fadeIn">
+          <i class="bi bi-plug"></i>
+          <div class="clientNumber">115</div>
+          <p>Telepített rendszer</p>
+        </div>
       </div>
     </div>
 
-    <div>
-      <div class="contactNav">
-        <div class="contactLogo">
-          <img src="https://cdn.pixabay.com/photo/2013/07/13/11/46/panel-158630__340.png" alt="Logo">
+    <main>
+      <section class="animatedParent">
+        <div class="mainTopInfo mainMaxWidth animated growIn">
+          <p>A napkollektor rendszer</p>
         </div>
-        <div class="phoneContact">
-          <i class="bi bi-telephone-inbound"></i></i>
-          <p class="opening ">Hét-Pén: 08:00 - 19:00</p>
-          <p>+36-99/303-45-00</p>
+        <div class="mainHeader mainMaxWidth">
+          <h2 class="customHeading">Mi a napkollektor?</h2>
         </div>
-        <div class="smsContant">
-          <i class="bi bi-chat-left-text"></i></i>
-          <p class="opening">Hét-Pén: 08:00 - 19:00</p>
-          <p>+36-99/303-45-00</p>
-        </div>
-        <a class="writingToUs_button"></a>
-      </div>
-      <div class="headWelcome">
-        <div class="">
-          <i class="bi bi-sun"></i>
-          <h2 class="headWelcomeHeader">Üdvözlünk a weboldalunkon!</h2>
-          <i class="bi bi-sun"></i>
-        </div>
-        <div class="">
-          <h2>Ismerkedj meg a Napenergia hasznosításában rejlő lehetőségekkel!</h2>
-        </div>
-      </div>
-    </div>
-  </header>
-  <nav class="w1120"><i class="bi bi-list" onclick=menudisplay()></i>
-    <ul class="menu" id="menulist">
-      <li class="navitems"><a href="index.html">Főoldal</a></li>
-      <li class="navitems"><a href="napelem.html">Napelemes rendszerek</a></li>
-      <li class="navitems"><a href="napkollektor.html">Melegvizes megoldások</a></li>
-      <li class="navitems"><a href="galeria.html">Galéria</a></li>
-    </ul>
-  </nav>
-  <main class="w1120">
-    <!--h2>Melegvizes megoldások</h2>-->
-    <div class="content">
-      <div class="imageContainer">
-        <div class="mainContent">
-          <h3>Mi a napkollektor?</h3>
-          <p>A napkollektor egy olyan eszköz, amely a nap sugárzását felhasználva hőenergiát állít elő. A megtermelt
-            energiát
-            melegvíz-készítésre, fűtésrásegítésre és medencefűtésre hasznosíthatjuk.
-            A napkollektoros rendszer használójaként nem csak pénzt takaríthatunk meg, de nagymértékben hozzájárulunk
+        <div class="mainMaxWidth animatedParent">
+          <p class="boldContent">A napkollektor egy olyan eszköz, amely a nap sugárzását felhasználva hőenergiát állít
+            elő. A megtermelt energiát
+            melegvíz-készítésre, fűtésrásegítésre és medencefűtésre hasznosíthatjuk.</p>
+          <p>A napkollektoros rendszer használójaként nem csak pénzt takaríthatunk meg, de nagymértékben hozzájárulunk
             környezetünk
-            védelméhez is.
-            Kihasználtságát tekintve leginkább tavasszal, nyáron és ősszel tudjuk élvezni előnyeit. Télen a megtermelt
-            hőenergia
-            kiegészítő fűtésként alkalmazható, teljes mértékben nem tudja ellátni a ház fűtését.
+            védelméhez is. Kihasználtságát tekintve leginkább tavasszal, nyáron és ősszel tudjuk élvezni előnyeit. Télen
+            a
+            megtermelt hőenergia kiegészítő fűtésként alkalmazható, teljes mértékben nem tudja ellátni a ház fűtését.
           </p>
+          <a href="#mainContent">
+            <button type="button" class="mainButton animated pulse">Olvass tovább!<i
+                class="bi bi-arrow-right"></i></button>
+          </a>
+          <p class="boldContent">Napkollektor felhasználhatósága</p>
         </div>
-        <img
+
+        <div class="systems mainMaxWidth">
+          <ul class="systemList">
+            <li class="systemListItems">
+              <i class="bi bi-shield-fill-check"></i>
+              <span class="">Melegvíz előállításra</span>
+            </li>
+            <li class="systemListItems">
+              <i class="bi bi-shield-fill-check"></i>
+              <span class="">Fűtésrásegítésre</span>
+            </li>
+            <li class="systemListItems">
+              <i class="bi bi-shield-fill-check"></i>
+              <span class="">Medence fűtésre</span>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+      <section id="mainContent" class="blueBackgroundContent animatedParent">
+        <img class="contentImage animated fadeInLeft"
           src="https://media.istockphoto.com/photos/solar-water-heating-system-ecological-economical-panel-boiling-liquid-picture-id1318056975?k=20&m=1318056975&s=612x612&w=0&h=ZwQFZ7qOMiIjhdCMTShUiwfc9MkxAVuLwzaMKWrTAx8="
           alt="">
-      </div>
-      <div class="imageContainer">
-        <div class="mainContent">
-          <h3>Napkollektor működése</h3>
-          <p>A napkollektor a rá eső napsugárzás 75-85%-át tudja hasznosítani. A kollektorok által termelt hő hőcserélőn
-            keresztül
-            egy vízzel töltött tárolót melegít. A rendszerben fagyálló folyadék kering. Így a megtermelt energia
-            napközben
-            eloszlik
-            a tárolóban, a nap végén pedig a fürdőszobában vagy a konyhában a saját magunknak termelt energiával
-            felmelegített
-            vizet
-            használhatjuk fel.
-            A napkollektoros rendszert 2 évente szükséges karbantartani.</p>
+        <div class="bluemainTopInfo mainMaxWidth animated growIn">Fenntartható, megbízható és megfizethető
+          energia!</div>
+        <h2 class="customHeading mainMaxWidth ">
+          Napkollektor működése
+        </h2>
+        <div class="blueMainContent mainMaxWidth">
+          <p class="blueMainBoldContent">A napkollektor a rá eső napsugárzás 75-85%-át tudja hasznosítani. A kollektorok
+            által termelt hő hőcserélőn keresztül
+            egy vízzel töltött tárolót melegít.</p>
+          <p class="BlueMainGreyContent">A rendszerben fagyálló folyadék kering. Így a megtermelt energia napközben
+            eloszlik a tárolóban, a nap végén pedig a
+            fürdőszobában vagy a konyhában a saját magunknak termelt energiával felmelegített vizet használhatjuk fel. A
+            napkollektoros rendszert 2 évente szükséges karbantartani.</p>
         </div>
-        <img
-          src="https://media.istockphoto.com/photos/building-with-a-solar-collectors-air-conditioning-units-and-satellite-picture-id1171125143?k=20&m=1171125143&s=612x612&w=0&h=N2zq6_NK_7P-hSAiAOVLGDBdBS0dhKHvanHI2BVSvJ4="
-          alt="">
-      </div>
-      <div class="imageContainer">
-        <div class="mainContent">
-          <h3>Napkollektor ár</h3>
-          <p>A napkollektor rendszer ára attól függ, hogy mekkora rendszerre van szükségünk és pontosan mire szeretnénk
-            használni.
-            Amennyiben csak melegvíz készítésre alkalmaznánk, kevesebb napkollektor is elegendő, így a költségek is
-            alacsonyabbak.
-            Fűtésrásegítés esetén már mélyebben a zsebünkbe kell nyúlnunk.
-            Egy 4 fős család példáját nézve, csak melegvíz készítésre 2 db kollektor telepítése szükséges. Számításaink
-            során
-            50
-            liter / fő használati melegvízzel számolunk. A szükséges anyagok és telepítési díj ebben az esetben
-            körülbelül
-            1,6
-            millió Ft.
-          </p>
-        </div>
-        <img
-          src="https://media.istockphoto.com/photos/solar-thermal-collector-picture-id1146608840?k=20&m=1146608840&s=612x612&w=0&h=v43fk1VkP_sBW5o33Mv_29D9gaY83dh-_qIW4PvKyYE="
-          alt="">
-      </div>
 
-      <div class="infoSendContainer">
-        <div class="infoSendContent">
-          <img src="https://cdn.pixabay.com/photo/2021/07/20/21/53/house-6481809__340.png">
-          <div class="infoSendMain">
-            <h2 class="infoSendHeader">Kérjen ajánlatot!</h2>
-            <div class="infoSendForm">
-              <label for="userName">Név</label><input type="text" id="userName" class="infoSendData" name="userName">
-              <label for="userEmail">Email</label><input type="text" id="userEmail" class="infoSendData"
-                name="userEmail">
-              <input type="submit" value="Több info-t kérek!">
+        <div class="buttonContainer mainMaxWidth">
+          <div class="blueMainbutton animatedParent">
+            <a href="#writeUs">
+              <button class="greenButton animated pulse">Érdeklődj!<i class="bi bi-arrow-right"></i></button>
+            </a>
+          </div>
+        </div>
+        <!--
+        <div class="buttonContainer mainMaxWidth">
+          <div class="blueMainbutton">
+            <a href="#">
+              <button class="">Ismerj meg minket!<i class="bi bi-arrow-right"></i></button>
+            </a>
+          </div>
+        </div>
+        -->
+        <div class="blueContentCarusel">
+          <div class="blueCaruselContainer mainMaxWidth">
+            <img src="https://cdn-icons-png.flaticon.com/128/3079/3079165.png" alt="">
+            <h3 class="blueCaruselTitle">Csökkentsd a kiadásaid</h3>
+            <div class="blueCaruselDescription">Pénzt takaríthatsz meg és növelheted otthonod értékét napelemekkel
+              telepítésével.</div>
+            <div class="blueMainbutton">
+              <a href="">
+                <button class="">Lapozz tovább!</button>
+              </a>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="imageContainer">
-        <div class="mainContent">
-          <h3>Napkollektor telepítése</h3>
-          <p>A napkollektoros rendszer telepítésekor több szakember bevonására is szükség van. A kollektorokat ácsok
-            szerelik
-            a
-            tetőre, míg a melegvíz bekötést és csövezést gépészek végzik el. Családi ház esetén a telepítés átlagosan
-            3-5
-            napot vesz
-            igénybe.</p>
+        <div class="callUsContent BlueMainGreyContent mainMaxWidth">Ha kérdésed van, vagy segítségre van szükséged, lépj
+          kapcsolatba csapatunkkal, vagy hívj minket bármikor!
+          <div class="blueMainbutton animatedParent">
+            <a href="tel:+36303030303">
+              <button class="callUs animated pulse">Hívj fel bennünket!<i class="bi bi-telephone"></i></button>
+            </a>
+          </div>
         </div>
-        <img
+      </section>
+
+      <section class="whiteContent animatedParent">
+        <img class="contentImage animated fadeInLeft"
           src="https://media.istockphoto.com/photos/sun-water-heating-system-picture-id519778988?k=20&m=519778988&s=612x612&w=0&h=jJWYw2nqRDr_8YViiSiHdv_Ol_1o3oTwoAdPvSkhhM8="
           alt="">
-      </div>
-      <div class="imageContainer">
-        <div class="mainContent">
-          <h3>Hova lehet napkollektort telepíteni?</h3>
-          <p>Napkollektort általában a tetőszerkezetre helyezzük el. Egy kollektor körülbelül bruttó 2 m2 tetőfelületet
-            foglal
-            el. A
-            legideálisabb a déli tájolás, 48-53°-os dőlésszög. Érdemes szakember véleményét kikérni és egy helyszíni
-            felmérésen
-            megvizsgálni, hogy egy adott tetőfelület megfelel-e a napkollektorok telepítésére és mennyi csövezésre lesz
-            szükség a
-            kollektorok és a gépészeti helység összekötésekor. Minél kisebb a távolság, annál egyszerűbb a kivitelezés
-            és
-            annál
-            kedvezőbb lesz a beruházás.</p>
+        <div class="mainMaxWidth animatedParent">
+          <div class="whiteMainTopInfo animated growIn">Energizálja a társadalmat fenntartható energiával!
+          </div>
+          <h2 class="customHeading">Napkollektor telepítése</h2>
+          <div class="whiteMainContent ">A napkollektoros rendszer telepítésekor több szakember bevonására is szükség
+            van.</p>
+            <p class="whiteMainGreyContent">A kollektorokat ácsok szerelik a tetőre, míg a melegvíz bekötést és
+              csövezést gépészek végzik el. Családi ház esetén a
+              telepítés átlagosan 3-5 napot vesz igénybe.</p>
+          </div>
         </div>
-        <img
-          src="https://media.istockphoto.com/photos/solar-heater-picture-id506724089?k=20&m=506724089&s=612x612&w=0&h=Fa-JGXj7jOcO-HLqG2DcWsYqFTjRtc12fl43e4vJFhs="
+      </section>
+
+      <section class="blueBackgroundContent animatedParent">
+        <img class="contentImage animated fadeInLeft"
+          src="https://media.istockphoto.com/photos/building-with-a-solar-collectors-air-conditioning-units-and-satellite-picture-id1171125143?k=20&m=1171125143&s=612x612&w=0&h=N2zq6_NK_7P-hSAiAOVLGDBdBS0dhKHvanHI2BVSvJ4="
           alt="">
-      </div>
-    </div>
-  </main>
-  <footer class="container">
-    <div class="contactFooter">
-      <div class="contactLogo">
-        <img src="https://cdn.pixabay.com/photo/2013/07/13/11/46/panel-158630__340.png" alt="Logo">
-      </div>
-      <div class="phoneContact">
+        <div class="bluemainTopInfo mainMaxWidth animated growIn">Elérhető, megbízható és megfizethető
+          energia!</div>
+
+        <div class="mainMaxWidth">
+          <h2 class="customHeading ">
+            Hova lehet napkollektort telepíteni?
+          </h2>
+        </div>
+        <div class="blueMainContent mainMaxWidth">
+          <p class="blueMainBoldContent">Napkollektort általában a tetőszerkezetre helyezzük el. Egy kollektor
+            körülbelül bruttó 2 m2 tetőfelületet foglal el. A
+            legideálisabb a déli tájolás, 48-53°-os dőlésszög.</p>
+          <p class="BlueMainGreyContent">Érdemes szakember véleményét kikérni és egy helyszíni felmérésen megvizsgálni,
+            hogy egy adott tetőfelület megfelel-e a
+            napkollektorok telepítésére és mennyi csövezésre lesz szükség a kollektorok és a gépészeti helység
+            összekötésekor. Minél
+            kisebb a távolság, annál egyszerűbb a kivitelezés és annál kedvezőbb lesz a beruházás.</p>
+        </div>
+
+
+        <div class="buttonContainer mainMaxWidth">
+          <div class="blueMainbutton animatedParent">
+            <a href="#writeUs">
+              <button class="greenButton animated pulse">Írj nekünk!<i class="bi bi-arrow-right"></i></button>
+            </a>
+          </div>
+        </div>
+
+        <div class="blueContentForm mainMaxWidth">
+          <div id="writeUs" class="blueFormContainer">
+            <form action="#" method="GET">
+              <input type="text" id="name" placeholder="Név">
+              <input type="text" id="email" placeholder="Email cím">
+              <input type="text" id="address" placeholder="Lakcím">
+              <input type="text" id="phone" placeholder="Telefonszám">
+              <textarea name="" id="message" cols="30" rows="10" placeholder="Üzenet"></textarea>
+              <button type="button" id="sendMessage">Küldés</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="whiteContent">
+        <div class=" downWhiteContent animatedParent">
+          <img class=" contentImage animated fadeInLeft"
+            src="https://media.istockphoto.com/photos/solar-heater-picture-id506724089?k=20&m=506724089&s=612x612&w=0&h=Fa-JGXj7jOcO-HLqG2DcWsYqFTjRtc12fl43e4vJFhs="
+            alt="">
+        </div>
+        <div class="whiteMain mainMaxWidth animatedParent">
+          <div class="whiteMainTopInfo animated growIn">
+            <p>Mennyibe kerül?</p>
+          </div>
+          <h2 class="customHeading">Napkollektor ár</h2>
+          <div class="whiteMainContent ">
+            <p class="whiteMainBoldContent">A napkollektor rendszer ára attól függ, hogy mekkora rendszerre van
+              szükségünk
+              és pontosan mire szeretnénk használni.</p>
+            <p class="whiteMainGreyContent">Amennyiben csak melegvíz készítésre alkalmaznánk, kevesebb napkollektor is
+              elegendő, így a költségek is alacsonyabbak.
+              Fűtésrásegítés esetén már mélyebben a zsebünkbe kell nyúlnunk. Egy 4 fős család példáját nézve, csak
+              melegvíz készítésre
+              2 db kollektor telepítése szükséges. Számításaink során 50 liter / fő használati melegvízzel számolunk. A
+              szükséges
+              anyagok és telepítési díj ebben az esetben körülbelül 1,6 millió Ft.</p>
+          </div>
+      </section>
+    </main>
+  </section>
+
+  <footer class="blueBackgroundContent">
+    <div class="blueFooterContent animatedParent">
+      <div class="phoneContact animated fadeInDown">
         <i class="bi bi-telephone-inbound"></i>
         <p class="opening ">Hét-Pén: 08:00 - 19:00</p>
         <p>+36-99/303-45-00</p>
       </div>
-      <div class="smsContact">
+      <div class="smsContact animated fadeInDown">
         <i class="bi bi-chat-left-text"></i>
         <p class="opening">Hét-Pén: 08:00 - 19:00</p>
         <p>+36-99/303-45-00</p>
       </div>
-      <a class="writingToUs_button"></a>
+
     </div>
 
-    <ul class="footerLinks" id="menulist">
-      <li class="navitems"><a href="index.html">Főoldal</a></li>
-      <li class="navitems"><a href="napelem.html">Napelemes rendszerek</a></li>
-      <li class="navitems"><a href="napkollektor.html">Melegvizes megoldások</a></li>
-      <li class="navitems"><a href="galeria.html">Galéria</a></li>
+    <ul class="footerLinks animatedParent" id="menulist">
+      <li class="navitems animated growIn"><a href="index.html">Főoldal</a></li>
+      <li class="navitems animated growIn"><a href="napelem.html">Napelemes rendszerek</a></li>
+      <li class="navitems animated growIn"><a href="napkollektor.html">Melegvizes megoldások</a></li>
+      <li class="navitems animated growIn"><a href="galeria.html">Galéria</a></li>
     </ul>
     <div class="sourchePageContainer">
       <div class="sourchePage">
@@ -244,8 +338,8 @@
       </div>
     </div>
 
-    <div class="footerNav">
-      <div class="scrollTop" data-target="html"><a href="#"><i class="bi bi-arrow-up"></i></a></div>
+    <div class="footerNav animatedParent">
+      <div class="scrollTop animated pulse" data-target="html"><a href="#"><i class="bi bi-arrow-up"></i></a></div>
       <ul class="clearfix">
         <li><a href="#">Privacy Policy</a></li>
         <li><a href="#">Sitemap</a></li>
@@ -254,7 +348,10 @@
     </div>
   </footer>
 
-  <script></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src='js/css3-animate-it.js'></script>
+
+  <script type="text/javascript" src="js/vizsga2.js"></script>
 </body>
 
 </html>
